@@ -1,0 +1,48 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+#rootDiv{
+    background-color: whitesmoke;
+}
+.box{
+    margin: 10px;
+    background-color: lightgrey;
+}
+.headerName{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5px;
+    margin-bottom: -1px;
+
+}
+.jumbotron{
+    background-color: rgb(119, 190, 214);
+    border: 2px solid black;
+}
+#hockey{
+    color: blue;
+}
+#trivia{
+    color: red;
+}
+#hangman{
+    color: white;
+}
+.infoTitle{
+    font-size: 14px;
+}
+.boxContent{
+    background-color: white;
+}
+img{
+    margin-left: 20px;
+}
+.letterDashes{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.jumbotron{
+    margin-bottom: 3px;
+}

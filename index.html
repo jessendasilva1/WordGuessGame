@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="rootDiv" style="height: 100vh;" class="container-fluid">
+
+        <div class="d-flex flex-row justify-content-center jumbotron">
+            <div id="hockey" class="headerName">
+                <h1> Hockey </h1>
+            </div>
+            <div id="trivia" class="headerName">
+                <h1> Trivia </h1>
+            </div>
+            <div id="hangman" class="headerName">
+                <h1> Hangman! </h1>
+            </div>
+        </div>
+
+        <div id="gameDiv" class="d-flex flex-row justify-content-center align-items-center">
+
+            <div class="d-flex flex-column">
+
+                <div class="d-flex flex-column box card">
+                    <h3 class="d-flex justify-content-center card-header">Current word</h3>
+                    <div id="wordDiv" class="boxContent d-flex justify-content-center">
+
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column box card">
+                    <h3 class="d-flex justify-content-center card-header">Guesses Remaining</h3>
+                    <div id="guessesLeftDiv" class="d-flex justify-content-center boxContent">
+                        13
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column box card">
+                    <h3 class="d-flex justify-content-center card-header">Previous Guesses</h3>
+                    <div id="previousGuesses" class="boxContent d-flex justify-content-center">
+                        <div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex box card">
+                    <h3 class="d-flex justify-content-center card-header">Wins</h3>
+                    <div id="wins" class="boxContent d-flex justify-content-center">
+                        0
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column">
+                <img src="assets/hangman-150.png" width="300px" height="360px" alt="hangman image">
+            </div>
+        </div>
+
+        <div style="width: 660px;" class="container">
+            <div class="d-flex box card">
+                <h3 class="d-flex justify-content-center card-header">Outome</h3>
+                <div id="outcome" class="boxContent d-flex justify-content-center">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        startGame();
+    </script>
+
+</body>
+
+</html>
