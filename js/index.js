@@ -14,7 +14,7 @@ function startGame() {
             currentWord = words[random];
             remainingLetters = currentWord.length;
             guessesRemaining = 13;
-            console.log("value: " + currentWord);
+            //console.log("value: " + currentWord);
             previousGuesses = [];
             $("#wordDiv").empty();
             $("#outcome").empty();
@@ -29,17 +29,17 @@ function startGame() {
         start();
 
         $(document).keyup(function (event) {
-            console.log("guessesRemaining: " + guessesRemaining);
-            console.log("previousGuesses: " + previousGuesses);
+            //console.log("guessesRemaining: " + guessesRemaining);
+            //console.log("previousGuesses: " + previousGuesses);
             checkInput(event.key);
         })
 
         function checkInput(pressedKey) {
             found = 0;
             for (var i = 0; i < previousGuesses.length; i++) {
-                console.log("previousGuess: " + previousGuesses[i] + ". PressedKey:" + pressedKey)
+                //console.log("previousGuess: " + previousGuesses[i] + ". PressedKey:" + pressedKey)
                 if (pressedKey === previousGuesses[i]) {
-                    console.log("youve already guessed that letter!");
+                    //console.log("youve already guessed that letter!");
                     return;
                 }
             }
@@ -50,9 +50,9 @@ function startGame() {
                         $(item).text(pressedKey);
                         //console.log(item);
                     })
-                    console.log('this letter is in the currentWord');
+                    //console.log('this letter is in the currentWord');
                     remainingLetters--;
-                    console.log("letters left: " + remainingLetters);
+                    //console.log("letters left: " + remainingLetters);
                     found++;
                     if(found < 2){
                         updatePreviousGuesses(pressedKey);
@@ -70,7 +70,7 @@ function startGame() {
                     outOfGuesses();
                 }
             }
-            console.log("pressedKey: " + pressedKey);
+            //console.log("pressedKey: " + pressedKey);
             found = 0;
         }
 
@@ -90,7 +90,7 @@ function startGame() {
         }
 
         function gameOver() {
-            console.log("User has guessed all the letters.  " + remainingLetters)
+            //console.log("User has guessed all the letters.  " + remainingLetters)
             wins++;
             $("#wins").text(wins);
             $("#outcome").text("You won!");
