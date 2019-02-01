@@ -12,3 +12,5 @@ They could be people, places, things, phrases or sayings and you must guess then
     2. If you guess the word in the allowed number of guesses you win!
 
     3. If you run out of guesses, you will loose the game and the game will automatically restart with a new hidden word. 
+    
+Click here to start playing: https://jessendasilva1.github.io/WordGuessGame/
